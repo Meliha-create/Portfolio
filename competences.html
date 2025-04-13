@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compétences – Meliha</title>
+  <link rel="stylesheet" href="port.css" />
+</head>
+<body>
+  <header class="nav">
+    <nav>
+      <a href="port.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="projets.html">Projets</a>
+      <a href="competences.html">Compétences</a>
+      <a href="faq.html">FAQ</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Compétences techniques</h2>
+
+    <div class="skills-visual-grid">
+
+      <!-- Python -->
+      <div class="lang-block python">
+        <div class="code-area">
+<pre><code>print("Bonjour le monde")</code></pre>
+        </div>
+        <div class="output">Bonjour le monde</div>
+        <div class="label">Python – IA, Data Science, scripts</div>
+      </div>
+
+      <!-- C -->
+      <div class="lang-block c">
+        <div class="code-area">
+<pre><code>printf("Hello C\\n");</code></pre>
+        </div>
+        <div class="output">Hello C</div>
+        <div class="label">C – Programmation système, bas niveau</div>
+      </div>
+
+      <!-- HTML -->
+      <div class="lang-block html">
+        <div class="code-area">
+<pre><code>&lt;h1&gt;Bienvenue !&lt;/h1&gt;</code></pre>
+        </div>
+        <div class="output simulated-browser"><h1>Bienvenue !</h1></div>
+        <div class="label">HTML – Structure de page web</div>
+      </div>
+
+      <!-- CSS -->
+      <div class="lang-block css">
+        <div class="code-area">
+<pre><code>h1 { color: coral; }</code></pre>
+        </div>
+        <div class="output simulated-browser"><h1 style="color: coral;">Bienvenue !</h1></div>
+        <div class="label">CSS – Design et styles visuels</div>
+      </div>
+
+      <!-- Java -->
+      <div class="lang-block java">
+        <div class="code-area">
+<pre><code>System.out.println("Java ❤️");</code></pre>
+        </div>
+        <div class="output">Java ❤️</div>
+        <div class="label">Java – Logiciel, applications robustes</div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="lang-block js">
+        <div class="code-area">
+<pre><code>document.write("Salut JS !");</code></pre>
+        </div>
+        <div class="output">Salut JS !</div>
+        <div class="label">JavaScript – Dynamisme web</div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.nav');
+      if (window.scrollY > 10) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  
+</body>
+</html>

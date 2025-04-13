@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets – Meliha</title>
+  <link rel="stylesheet" href="port.css" />
+</head>
+<body>
+  <header class="nav">
+    <nav>
+      <a href="port.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="projets.html">Projets</a>
+      <a href="competences.html">Compétences</a>
+      <a href="faq.html">FAQ</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <section class="page">
+    <h2>Mes projets</h2>
+  
+    <!-- Projet Chromosomes -->
+    <div class="project-detection">
+      <h3>🧬 Détection d’anomalies chromosomiques</h3>
+      <p>
+        Ce projet vise à <strong>automatiser la détection d’anomalies structurelles</strong> (délétions, duplications, inversions, translocations) dans des images cytogénétiques de chromosomes. Il s’appuie sur une approche par <strong>apprentissage non supervisé</strong> pour accélérer les diagnostics médicaux et réduire les erreurs humaines.
+      </p>
+      <p><strong>Pipeline développé :</strong></p>
+      <ul>
+        <li><strong>Prétraitement</strong> des images, redimensionnement et structuration via CSV</li>
+        <li><strong>Encodage</strong> par ResNet50 personnalisé pour extraire des vecteurs latents</li>
+        <li><strong>Apprentissage contrastif</strong> entre chromosomes similaires et différents</li>
+        <li><strong>Détection d’anomalies</strong> basée sur la distance latente et visualisation</li>
+      </ul>
+      <p><strong>Outils :</strong></p>
+      <div class="tools">Python, PyTorch, Google Colab, OpenCV, NumPy, Matplotlib, ResNet50</div>
+      <p>
+        Ce projet mêle rigueur scientifique, intelligence artificielle avancée et utilité biomédicale. Une interface de détection automatique est en préparation pour charger de nouvelles images et visualiser les anomalies en temps réel.
+      </p>
+      <p><strong>📎 Documents :</strong></p>
+      <div class="loading-documents">
+        <div class="hourglass"></div>
+        <span>Documents en cours de finalisation…</span>
+      </div>
+
+  
+    <!-- Projet Tortue nettoyeuse -->
+    <div class="project-tortue">
+      <h3>🐢 La tortue nettoyeuse (Jeu éducatif)</h3>
+      <p>
+        Ce projet ludique consiste à programmer une tortue virtuelle pour <strong>collecter des déchets marins</strong> dans un environnement dynamique. L’objectif est à la fois éducatif et écologique : sensibiliser à la pollution des océans tout en développant des compétences en algorithmique.
+      </p>
+      <ul>
+        <li>Utilisation de la bibliothèque <strong>Turtle</strong> pour les déplacements</li>
+        <li><strong>Cartes générées aléatoirement</strong> avec obstacles et déchets</li>
+        <li>Algorithme basé sur la <strong>distance de Manhattan</strong> pour optimiser le parcours</li>
+        <li>Animations et <strong>effets sonores déclenchés</strong> lors de la collecte</li>
+      </ul>
+      <div class="tools">Python, Turtle, Pygame, JSON</div>
+      <p><a href="tortue_cleaner_pack.zip" download>📦 Télécharger le projet (ZIP)</a></p>
+    </div>
+  
+    <!-- Projet Protéines -->
+    <div class="project-proteines">
+      <h3>🧬 Alignement de séquences protéiques</h3>
+      <p>
+        Projet de bio-informatique inspiré des outils EMBOSS. L’objectif est de reproduire l’analyse d’alignements de séquences d’acides aminés à l’aide d’algorithmes de <strong>comparaison semi-globale et globale</strong>.
+      </p>
+      <ul>
+        <li><strong>Alignement optimal</strong> entre deux protéines (score, similarité, identité)</li>
+        <li>Utilisation de <strong>matrices de substitution</strong> (PAM, BLOSUM...)</li>
+        <li>Implémentation <strong>manuelle des algorithmes</strong> pour analyser la qualité des alignements</li>
+        <li>Affichage des scores et <strong>analyse des performances</strong></li>
+      </ul>
+      <div class="tools">Python, Algorithmes d’alignement, Biopython (optionnel)</div>
+      <p><a href="Projet_proteine.zip" download>📦 Télécharger le projet (ZIP)</a></p>
+    </div>
+  
+    <!-- Projet Saint-Quentin -->
+    <div class="project-saintquentin">
+      <h3>🌳 Projet Saint-Quentin – Arbre décisionnel interactif</h3>
+      <p>
+        Réalisé dans le cadre d’un projet pluridisciplinaire, ce travail a consisté à concevoir un <strong>arbre de décision simulant des parcours utilisateurs</strong> dans une interface interactive. L’objectif était de modéliser différents cas selon des profils d’usagers.
+      </p>
+      <ul>
+        <li>Création d’un <strong>arbre logique de scénarios</strong></li>
+        <li>Intégration <strong>front-end web</strong> avec interaction utilisateur</li>
+        <li>Déclinaison du projet en <strong>3 volets : Big Data, IA, et Web</strong></li>
+      </ul>
+      <div class="tools">HTML, CSS, JS, Data structures</div>
+      <p>
+        <a href="Rapport_Big_Data.pdf" download>📘 Rapport Big Data</a> |
+        <a href="Rapport_IA.pdf" download>📗 Rapport IA</a> |
+        <a href="Rapport_Web.pdf" download>📕 Rapport Web</a>
+      </p>
+    </div>
+  </section>
+  
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.nav');
+      if (window.scrollY > 10) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  
+</body>
+</html>

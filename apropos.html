@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos – Meliha</title>
+  <link rel="stylesheet" href="port.css">
+</head>
+<body>
+  <header class="nav">
+    <nav>
+      <a href="port.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="projets.html">Projets</a>
+      <a href="competences.html">Compétences</a>
+      <a href="faq.html">FAQ</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>À propos</h2>
+    <p>
+      Animée par une <strong>curiosité intellectuelle constante</strong> et une vraie soif d’apprendre, je me passionne pour le croisement entre <strong>créativité front-end</strong> et <strong>intelligence artificielle</strong>.
+    </p>
+    <p>
+      Cette année, j’ai approfondi mes compétences en <strong>deep learning</strong>, <strong>traitement d’image</strong>, <strong>neurosciences</strong> et <strong>en no-code</strong>, dans le but de maîtriser autant les outils techniques que les approches innovantes de l’IA.
+    </p>
+    <p>
+      Je suis convaincue que <em>l’apprentissage passe par l’action</em> : je cherche donc à mettre en pratique mes connaissances et à progresser chaque jour à travers des projets concrets.
+    </p>
+    <p>
+      Mon objectif ? <strong>Développer des solutions utiles, impactantes</strong>, et toujours enrichies par une démarche humaine et scientifique.
+    </p>
+  </main>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.nav');
+      if (window.scrollY > 10) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  
+</body>
+</html>

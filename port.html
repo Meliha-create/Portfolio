@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Meliha</title>
+  <link rel="stylesheet" href="port.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <nav>
+      <a href="port.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="projets.html">Projets</a>
+      <a href="competences.html">Compétences</a>
+      <a href="faq.html">FAQ</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <section class="hero-section fancy-background">
+    <div class="animated-circles">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+    </div>
+
+    <h1>Bonjour, moi c’est Meliha 👋</h1>
+    <p>
+      Je suis une développeuse créative, étudiante en 4<sup>e</sup> année à l’ISEN de Brest, spécialisée en intelligence artificielle et en développement web.<br />
+      Passionnée par l’innovation, je conçois des solutions mêlant rigueur scientifique, sens humain et esthétisme interactif.
+    </p>
+    <a class="cta" href="projets.html">Voir mes projets</a>
+  </section>
+
+  <section class="page">
+    <h2>Contact</h2>
+    <p><strong>Email :</strong> meliha.acar@isen-ouest.yncrea.fr</p>
+    <p><strong>Téléphone :</strong> 07 82 79 92 85</p>
+    <p><strong>LinkedIn :</strong> <a href="https://linkedin.com/in/meliha-acar" target="_blank">linkedin.com/in/meliha-acar</a></p>
+  </section>
+
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.nav');
+      if (window.scrollY > 10) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+  
+
+</body>
+</html>
