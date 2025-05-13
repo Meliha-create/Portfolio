@@ -9,7 +9,7 @@
 <body>
   <header class="nav">
     <nav>
-      <a href="port.html">Accueil</a>
+      <a href="index.html">Accueil</a>
       <a href="apropos.html">À propos</a>
       <a href="projets.html">Projets</a>
       <a href="competences.html">Compétences</a>
@@ -22,57 +22,46 @@
     <h2>Mes projets</h2>
 
     <!-- Projet Tumeurs cérébrales -->
-    <div class="project-detection">
-      <h3>🧠 Détection de tumeurs cérébrales (Projet en cours)</h3>
+    <div class="project-tortue">
+      <h3>🧠 Détection et segmentation de tumeurs cérébrales (en cours)</h3>
       <p>
-        Ce projet propose un outil d’IA orienté vers la pratique clinique pour la <strong>détection et la segmentation des tumeurs cérébrales</strong>, conçu pour accompagner les radiologues à l’aide de prédictions <strong>interprétables et exploitables</strong>.
+        Ce projet propose un outil d’intelligence artificielle orienté vers la pratique clinique pour la <strong>détection et la segmentation des tumeurs cérébrales</strong>. Il est conçu pour accompagner les radiologues à l’aide de prédictions <strong>interprétables et exploitables</strong>.
       </p>
       <p>
-        Plutôt que de viser une précision maximale difficile à atteindre, le système cherche à améliorer le processus global de prise de décision médicale grâce à une collaboration efficace entre l’IA et les praticiens.
+        Plutôt que de viser une précision maximale difficile à atteindre, le système cherche à <strong>améliorer le processus global de prise de décision</strong> grâce à une collaboration efficace entre l’IA et les médecins.
       </p>
-      <p><strong>Outils utilisés :</strong></p>
-      <div class="tools">Python, PyTorch, IRM, U-Net (à venir), Gradio / NiceGUI</div>
-      <p><strong>📎 Documents :</strong></p>
       <div class="loading-documents">
         <div class="hourglass"></div>
-        <span>Documents en cours de préparation…</span>
+        <span>Projet actuellement en développement…</span>
       </div>
     </div>
 
     <!-- Projet Chromosomes -->
-    <div class="project-detection">
+    <div class="project-proteines">
       <h3>🧬 Détection d’anomalies chromosomiques</h3>
       <p>
         Ce projet vise à <strong>automatiser la détection d’anomalies structurelles</strong> (délétions, duplications, inversions, translocations) dans des images cytogénétiques de chromosomes. Il s’appuie sur une approche par <strong>apprentissage non supervisé</strong> pour accélérer les diagnostics médicaux et réduire les erreurs humaines.
       </p>
-      <p><strong>Pipeline développé :</strong></p>
       <ul>
         <li><strong>Prétraitement</strong> des images, redimensionnement et structuration via CSV</li>
         <li><strong>Encodage</strong> par ResNet50 personnalisé pour extraire des vecteurs latents</li>
         <li><strong>Apprentissage contrastif</strong> entre chromosomes similaires et différents</li>
         <li><strong>Détection d’anomalies</strong> basée sur la distance latente et visualisation</li>
       </ul>
-      <p><strong>Outils :</strong></p>
       <div class="tools">Python, PyTorch, Google Colab, OpenCV, NumPy, Matplotlib, ResNet50</div>
-      <p>
-        Ce projet mêle rigueur scientifique, intelligence artificielle avancée et utilité biomédicale. Il a débouché sur une application prête à l’emploi permettant de charger de nouvelles images et de visualiser les anomalies en temps réel.
-      </p>
-      <p><strong>📎 Application :</strong></p>
-      <p><a href="launch_chromai.bat" download>📦 Télécharger l'application</a></p>
     </div>
 
-
-    <!-- Projet Tortue nettoyeuse -->
+    <!-- Projet Tortue -->
     <div class="project-tortue">
       <h3>🐢 La tortue nettoyeuse (Jeu éducatif)</h3>
       <p>
-        Ce projet ludique consiste à programmer une tortue virtuelle pour <strong>collecter des déchets marins</strong> dans un environnement dynamique. L’objectif est à la fois éducatif et écologique : sensibiliser à la pollution des océans tout en développant des compétences en algorithmique.
+        Ce projet ludique consiste à programmer une tortue virtuelle pour <strong>collecter des déchets marins</strong> dans un environnement dynamique.
       </p>
       <ul>
-        <li>Utilisation de la bibliothèque <strong>Turtle</strong> pour les déplacements</li>
+        <li>Utilisation de la bibliothèque <strong>Turtle</strong></li>
         <li><strong>Cartes générées aléatoirement</strong> avec obstacles et déchets</li>
-        <li>Algorithme basé sur la <strong>distance de Manhattan</strong> pour optimiser le parcours</li>
-        <li>Animations et <strong>effets sonores déclenchés</strong> lors de la collecte</li>
+        <li>Algorithme basé sur la <strong>distance de Manhattan</strong></li>
+        <li>Animations et <strong>effets sonores</strong></li>
       </ul>
       <div class="tools">Python, Turtle, Pygame, JSON</div>
       <p><a href="tortue_cleaner_pack.zip" download>📦 Télécharger le projet (ZIP)</a></p>
@@ -82,13 +71,12 @@
     <div class="project-proteines">
       <h3>🧬 Alignement de séquences protéiques</h3>
       <p>
-        Projet de bio-informatique inspiré des outils EMBOSS. L’objectif est de reproduire l’analyse d’alignements de séquences d’acides aminés à l’aide d’algorithmes de <strong>comparaison semi-globale et globale</strong>.
+        Projet de bio-informatique visant à reproduire l’analyse d’alignements de séquences d’acides aminés avec des algorithmes <strong>globaux et semi-globaux</strong>.
       </p>
       <ul>
         <li><strong>Alignement optimal</strong> entre deux protéines (score, similarité, identité)</li>
         <li>Utilisation de <strong>matrices de substitution</strong> (PAM, BLOSUM...)</li>
-        <li>Implémentation <strong>manuelle des algorithmes</strong> pour analyser la qualité des alignements</li>
-        <li>Affichage des scores et <strong>analyse des performances</strong></li>
+        <li>Implémentation <strong>manuelle</strong> des algorithmes</li>
       </ul>
       <div class="tools">Python, Algorithmes d’alignement, Biopython (optionnel)</div>
       <p><a href="Projet_proteine.zip" download>📦 Télécharger le projet (ZIP)</a></p>
@@ -98,12 +86,11 @@
     <div class="project-saintquentin">
       <h3>🌳 Projet Saint-Quentin – Arbre décisionnel interactif</h3>
       <p>
-        Réalisé dans le cadre d’un projet pluridisciplinaire, ce travail a consisté à concevoir un <strong>arbre de décision simulant des parcours utilisateurs</strong> dans une interface interactive. L’objectif était de modéliser différents cas selon des profils d’usagers.
+        Ce projet pluridisciplinaire simule des parcours utilisateurs via un <strong>arbre de décision interactif</strong>. Il a été décliné en trois volets : Big Data, IA, et Web.
       </p>
       <ul>
-        <li>Création d’un <strong>arbre logique de scénarios</strong></li>
-        <li>Intégration <strong>front-end web</strong> avec interaction utilisateur</li>
-        <li>Déclinaison du projet en <strong>3 volets : Big Data, IA, et Web</strong></li>
+        <li><strong>Arbre logique de scénarios</strong></li>
+        <li>Interface <strong>front-end</strong> interactive</li>
       </ul>
       <div class="tools">HTML, CSS, JS, Data structures</div>
       <p>
