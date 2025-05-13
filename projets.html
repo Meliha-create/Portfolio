@@ -9,7 +9,7 @@
 <body>
   <header class="nav">
     <nav>
-      <a href="index.html">Accueil</a>
+      <a href="port.html">Accueil</a>
       <a href="apropos.html">À propos</a>
       <a href="projets.html">Projets</a>
       <a href="competences.html">Compétences</a>
@@ -20,7 +20,25 @@
 
   <section class="page">
     <h2>Mes projets</h2>
-  
+
+    <!-- Projet Tumeurs cérébrales -->
+    <div class="project-detection">
+      <h3>🧠 Détection de tumeurs cérébrales (Projet en cours)</h3>
+      <p>
+        Ce projet propose un outil d’IA orienté vers la pratique clinique pour la <strong>détection et la segmentation des tumeurs cérébrales</strong>, conçu pour accompagner les radiologues à l’aide de prédictions <strong>interprétables et exploitables</strong>.
+      </p>
+      <p>
+        Plutôt que de viser une précision maximale difficile à atteindre, le système cherche à améliorer le processus global de prise de décision médicale grâce à une collaboration efficace entre l’IA et les praticiens.
+      </p>
+      <p><strong>Outils utilisés :</strong></p>
+      <div class="tools">Python, PyTorch, IRM, U-Net (à venir), Gradio / NiceGUI</div>
+      <p><strong>📎 Documents :</strong></p>
+      <div class="loading-documents">
+        <div class="hourglass"></div>
+        <span>Documents en cours de préparation…</span>
+      </div>
+    </div>
+
     <!-- Projet Chromosomes -->
     <div class="project-detection">
       <h3>🧬 Détection d’anomalies chromosomiques</h3>
@@ -37,15 +55,13 @@
       <p><strong>Outils :</strong></p>
       <div class="tools">Python, PyTorch, Google Colab, OpenCV, NumPy, Matplotlib, ResNet50</div>
       <p>
-        Ce projet mêle rigueur scientifique, intelligence artificielle avancée et utilité biomédicale. Une interface de détection automatique est en préparation pour charger de nouvelles images et visualiser les anomalies en temps réel.
+        Ce projet mêle rigueur scientifique, intelligence artificielle avancée et utilité biomédicale. Il a débouché sur une application prête à l’emploi permettant de charger de nouvelles images et de visualiser les anomalies en temps réel.
       </p>
-      <p><strong>📎 Documents :</strong></p>
-      <div class="loading-documents">
-        <div class="hourglass"></div>
-        <span>Documents en cours de finalisation…</span>
-      </div>
+      <p><strong>📎 Application :</strong></p>
+      <p><a href="launch_chromai.bat" download>📦 Télécharger l'application</a></p>
+    </div>
 
-  
+
     <!-- Projet Tortue nettoyeuse -->
     <div class="project-tortue">
       <h3>🐢 La tortue nettoyeuse (Jeu éducatif)</h3>
@@ -61,7 +77,7 @@
       <div class="tools">Python, Turtle, Pygame, JSON</div>
       <p><a href="tortue_cleaner_pack.zip" download>📦 Télécharger le projet (ZIP)</a></p>
     </div>
-  
+
     <!-- Projet Protéines -->
     <div class="project-proteines">
       <h3>🧬 Alignement de séquences protéiques</h3>
@@ -77,7 +93,7 @@
       <div class="tools">Python, Algorithmes d’alignement, Biopython (optionnel)</div>
       <p><a href="Projet_proteine.zip" download>📦 Télécharger le projet (ZIP)</a></p>
     </div>
-  
+
     <!-- Projet Saint-Quentin -->
     <div class="project-saintquentin">
       <h3>🌳 Projet Saint-Quentin – Arbre décisionnel interactif</h3>
@@ -97,19 +113,12 @@
       </p>
     </div>
   </section>
-  
 
   <script>
     window.addEventListener('scroll', () => {
       const nav = document.querySelector('.nav');
-      if (window.scrollY > 10) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
+      nav.classList.toggle('scrolled', window.scrollY > 10);
     });
   </script>
-
-  
 </body>
 </html>
