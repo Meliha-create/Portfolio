@@ -292,7 +292,9 @@ body {
 
   .project-tortue,
 .project-proteines,
-.project-saintquentin {
+.project-saintquentin,
+.project-detection,
+.project-tumeur {
   background: #fdf4ff;
   border-left: 4px solid #d946ef;
   padding: 1.5rem 2rem;
@@ -301,32 +303,40 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
 }
 
-.project-tortue h3,
-.project-proteines h3,
-.project-saintquentin h3 {
+.project-tortue,
+.project-proteines,
+.project-saintquentin,
+.project-detection,
+.project-tumeur {
   color: #a21caf;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.project-tortue p,
-.project-proteines p,
-.project-saintquentin p {
+.project-tortue,
+.project-proteines,
+.project-saintquentin,
+.project-detection,
+.project-tumeur {
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
-.project-tortue ul,
-.project-proteines ul,
-.project-saintquentin ul {
+.project-tortue,
+.project-proteines,
+.project-saintquentin,
+.project-detection,
+.project-tumeur {
   padding-left: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.project-tortue li,
-.project-proteines li,
-.project-saintquentin li {
+.project-tortue,
+.project-proteines,
+.project-saintquentin,
+.project-detection,
+.project-tumeur {
   margin-bottom: 0.5rem;
   list-style-type: \"✨ \";
 }
